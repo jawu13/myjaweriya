@@ -1,0 +1,49 @@
+/* src/pages/AdminAssessmentsPage.module.css */
+.tableContainer {
+    padding: 1rem;
+}
+
+.assessmentTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.assessmentTable thead th {
+    border-bottom: 2px solid var(--color-border);
+    color: var(--color-text-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    text-align: left;
+    padding: 1rem;
+}
+
+.assessmentTable tbody tr {
+    border-bottom: 1px solid var(--color-border);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.assessmentTable tbody tr:last-child {
+    border-bottom: none;
+}
+
+.assessmentTable tbody tr:hover {
+    background-color: var(--color-background);
+}
+
+.assessmentTable td {
+    vertical-align: middle;
+    padding: 1.25rem 1rem;
+}
+
+.title {
+    font-weight: 600;
+    color: var(--color-text-primary);
+    font-size: 1rem;
+}
+
+.questionCount {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}

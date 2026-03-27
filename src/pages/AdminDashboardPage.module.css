@@ -1,0 +1,27 @@
+/* src/pages/AdminDashboardPage.module.css */
+.statCard {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.statIcon {
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-background);
+}
+.statValue {
+    font-size: 2.25rem;
+    font-weight: 800;
+    font-family: var(--font-family-heading);
+    color: var(--color-text-primary);
+}
+.statLabel {
+    color: var(--color-text-secondary);
+    font-weight: 600;
+}

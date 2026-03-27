@@ -1,0 +1,97 @@
+/* src/components/AuthForm.css */
+.auth-container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Adjust based on your header's height */
+    padding: 2rem;
+    background-color: var(--color-background);
+}
+
+.auth-card {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 650px;
+    overflow: hidden; /* Important for rounded corners on children */
+}
+
+/* The left side with the illustration and content */
+.auth-visual-side {
+    flex: 1;
+    background-color: #e2f0ee; /* A very light shade of our primary teal */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    text-align: center;
+}
+.auth-visual-side h3 {
+    font-family: var(--font-family-heading);
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+.auth-visual-side p {
+    color: var(--color-text-secondary);
+    max-width: 320px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+.auth-visual-side svg {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* The right side with the form */
+.auth-form-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-surface);
+}
+
+.auth-card-content {
+    padding: 2rem 3rem;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.auth-header h2 {
+    font-family: var(--font-family-heading);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.auth-header p {
+    color: var(--color-text-secondary);
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border);
+}

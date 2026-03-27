@@ -1,0 +1,58 @@
+/* src/pages/ProfilePage.module.css */
+.profileGrid {
+    display: grid;
+    grid-template-columns: 280px 1fr; /* Fixed left column, flexible right column */
+    gap: 2rem;
+    align-items: start;
+}
+
+.profileCard {
+    text-align: center;
+    position: sticky; /* Makes the profile card stay in view on scroll */
+    top: 100px; /* Adjust based on your header height + desired spacing */
+}
+
+.profileCardContent {
+    padding: 2rem 1.5rem;
+}
+
+.avatarContainer {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.username {
+    font-family: var(--font-family-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.email {
+    color: var(--color-text-secondary);
+    margin-bottom: 1.5rem;
+    word-break: break-all;
+}
+
+.appointmentTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.appointmentTable th,
+.appointmentTable td {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.appointmentTable th {
+    color: var(--color-text-secondary);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.appointmentTable tbody tr:last-child td {
+    border-bottom: none;
+}

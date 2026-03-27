@@ -1,0 +1,65 @@
+/* src/pages/QuestionnairePage.module.css */
+.questionBlock {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.questionBlock:last-of-type {
+    border-bottom: none;
+}
+
+.questionText {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--color-text-primary);
+    margin-bottom: 1rem;
+}
+
+.optionsContainer {
+    list-style: none;
+    padding: 0;
+}
+
+.optionLabel {
+    display: block;
+    padding: 0.75rem 1.25rem;
+    border: 2px solid var(--color-border);
+    border-radius: var(--border-radius);
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    font-weight: 500;
+}
+
+.optionLabel:hover {
+    border-color: var(--color-primary);
+    background-color: var(--color-background);
+}
+
+.optionInput {
+    display: none; /* Hide the actual radio button */
+}
+
+/* When the hidden radio is checked, style the container label */
+.optionInput:checked + .optionLabel {
+    border-color: var(--color-primary);
+    background-color: #e2f0ee; /* Light teal */
+}
+
+.submitContainer {
+    padding: 1rem 1.5rem;
+    position: sticky;
+    bottom: 0;
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+.progressText {
+    font-weight: 600;
+    color: var(--color-text-secondary);
+}

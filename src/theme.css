@@ -1,0 +1,24 @@
+/* src/theme.css */
+
+:root {
+  /* Color Palette */
+  --color-primary: #2A9D8F;      /* Calming Teal */
+  --color-accent: #8AB17D;       /* Soft Green */
+  --color-danger: #E76F51;       /* A softer, warmer red */
+  --color-warning: #E9C46A;     /* A muted yellow */
+
+  /* Neutral Palette */
+  --color-background: #F8F9FA;  /* Soft off-white */
+  --color-surface: #FFFFFF;      /* For cards and modals */
+  --color-text-primary: #212529; /* Dark, off-black for high contrast */
+  --color-text-secondary: #6C757D; /* Muted gray for secondary text */
+  --color-border: #DEE2E6;      /* Light gray for borders */
+
+  /* Typography */
+   --font-family-heading: 'Lora', serif;
+  --font-family-body: 'Source Sans 3', sans-serif;
+
+  /* Component Styles */
+  --border-radius: 0.5rem; /* 8px */
+  --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,17 @@
+/* src/pages/ForumPage.module.css */
+.postCard {
+    margin-bottom: 1.5rem;
+    display: block; /* Make the whole card a clickable area */
+    color: inherit;
+    text-decoration: none;
+}
+
+.postCard:hover {
+    color: inherit;
+}
+
+.postMeta {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 0;
+}

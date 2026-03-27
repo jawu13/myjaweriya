@@ -1,0 +1,72 @@
+/* src/pages/AdminUsersPage.module.css */
+.tableContainer {
+    padding: 1rem;
+}
+
+.userTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.userTable thead th {
+    border-bottom: 2px solid var(--color-border);
+    color: var(--color-text-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    text-align: left;
+    padding: 1rem;
+}
+
+.userTable tbody tr {
+    border-bottom: 1px solid var(--color-border);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.userTable tbody tr:last-child {
+    border-bottom: none;
+}
+
+.userTable tbody tr:hover {
+    background-color: var(--color-background);
+}
+
+.userTable td {
+    vertical-align: middle;
+    padding: 0.75rem 1rem;
+}
+
+.userInfoCell {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-weight: 600;
+    color: var(--color-text-primary);
+    font-size: 1rem;
+}
+
+.email {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}
+
+.roleBadge {
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.35em 0.65em;
+    text-transform: capitalize;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}

@@ -1,0 +1,13 @@
+/* src/components/Avatar.module.css */
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-family: var(--font-family-heading);
+    text-transform: uppercase;
+}

@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
@@ -6,10 +7,11 @@ import './App.css';
 function App() {
   // 'useState' will store the message we get from the backend.
   const [backendMessage, setBackendMessage] = useState('');
+  
 
-  // 'useEffect' runs code after the component mounts.
-  // The empty array [] means it will only run once.
+  
   useEffect(() => {
+    const user1= {name:"rahul"};
     // We use the fetch API to make a GET request to our backend endpoint.
     fetch('http://localhost:8080/api/health')
       .then(response => response.json()) // Parse the JSON response
